@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ubofes International Schools</title>
+  <link rel="stylesheet" href="UBO.CSS" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="sch.jpg" alt="Ubofes Logo">
+        <h1>Ubofes International Schools<span></span></h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#admission">Admissions</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Raising Future Leaders</h2>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p><strong></strong> Ubofes International Schools provides quality education for Nursery, Primary, and Secondary students — nurturing creativity, excellence, and moral discipline to raise future global leaders.</p>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section id="academics" class="academics">
+    <div class="container">
+      <h2>Our Academics</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="nursery.png" alt="Nursery Icon">
+          <h3>Nursery</h3>
+          <p>Fun based early learning to build curiosity and confidence.</p>
+        </div>
+        <div class="card">
+          <img src="primary.png" alt="Primary Icon">
+          <h3>Primary</h3>
+          <p>Strong academic foundation with a blend of creativity and logic.</p>
+        </div>
+        <div class="card">
+          <img src="sec.png" alt="Secondary Icon">
+          <h3>Secondary</h3>
+          <p>Advanced curriculum designed to engage leaders across fields.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admission" class="admission">
+    <div class="container">
+      <h2>Admissions</h2>
+      <p>Join our vibrant educational community. <br> Your application for entry to Ubofes International Schools.</p>
+      <form class="admission-form" id="myForm"
+      action="https://formspree.io/f/xdkpozao" method="POST">
+        
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit" class="btn">Apply Now</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent actual form submission
+  
+  // Simulate success or failure (for demo)
+  const success = Math.random() > 0.5; 
+  
+  if (success) {
+    alert("✅ Application submitted successfully!");
+  } else {
+    alert("❌ Application failed. Please try again.");
+  }
+});
+</script>
+
+  <!-- contact -->
+   <section id="contact" class="contact">
+  
+    <div class="container">
+      <p><strong>Contact:</strong> 
+        <a href="mailto: info@ubofes,com">Ikot idaha ibiono, Akwa ibom state, Nigeria</a>| 
+        <a href="tel: +234-806-4593-122"> 📞 +234-806-4593-122
+</a>
+        </p>
+      
+    </div>
+  </section>
+
+</body>
+</html>
